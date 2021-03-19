@@ -4,3 +4,19 @@
 body {
   min-height: 100vh;
 }
+
+.defaul__wrapper {
+  background-color: #914d50;
+}
+
+.index__page {
+  background-color: green;
+}
+
+.about__page {
+  background-color: rgb(64, 136, 165);
+}
+
+a {
+  color: #ddd
+}
