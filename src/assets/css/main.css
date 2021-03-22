@@ -1,22 +1,29 @@
 @import "todo.css";
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
 
-body {
+body,
+#app {
   min-height: 100vh;
+  background-color: #f2f2f2;
 }
 
-.defaul__wrapper {
-  background-color: #914d50;
+#app {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-.index__page {
-  background-color: green;
+.default__wrapper {
+  flex: 1;
+  background-color: #fff;
 }
 
-.about__page {
-  background-color: rgb(64, 136, 165);
+.login__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-a {
-  color: #ddd
+.login__form {
+  width: 300px;
 }

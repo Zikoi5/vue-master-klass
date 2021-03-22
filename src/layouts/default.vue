@@ -1,23 +1,18 @@
 <template>
-  <div class="container defaul__wrapper">
-    Bu default layout
-    <ul>
-      <li>
-        <router-link :to="{ name: 'home' }">
-          Index
-        </router-link>
-      </li>
-      <li>
-        <router-link :to="{ name: 'about' }">
-          About
-        </router-link>
-      </li>
-    </ul>
+  <div class="default__wrapper">
+    <navbar />
 
-    <router-view></router-view>
+    <div class="container">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
-export default {}
+import navbar from "@/components/navbar.vue"
+export default {
+  components: {
+    navbar
+  }
+}
 </script>

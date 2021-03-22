@@ -1,2 +1,4 @@
-+ 1. Vue routerda layout tizimini yozamiz
-+ 2. Defaul, login` va 404 layoutlarini yasaymiz
+- ~~Vue routerda layout tizimini yozamiz~~
+- ~~Defaul, login` va 404 layoutlarini yasaymiz~~
+- Saytimizga stil beramiz, ~~proyektga prettier o'rnatamiz~~
+- Routelarni nazorat qiladigan guard yozamiz
