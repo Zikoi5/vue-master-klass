@@ -42,8 +42,9 @@ export default {
   },
   methods: {
     login() {
-      // alert(JSON.stringify(this.form, null, 2))
-      this.$router.push({
+      localStorage.setItem("token", "bu_token")
+
+      this.$router.replace({
         name: "home"
       })
     }

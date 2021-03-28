@@ -16,13 +16,19 @@ const routes = [
       {
         path: "",
         name: "home",
-        component: lazyload("index")
+        component: lazyload("index"),
+        meta: {
+          auth: true
+        }
       },
 
       {
         path: "about",
         name: "about",
-        component: lazyload("about")
+        component: lazyload("about"),
+        meta: {
+          auth: true
+        }
       }
     ]
   },
@@ -49,6 +55,38 @@ const routes = [
 
 const router = new VueRouter({
   routes
+})
+
+// eslint-disable-next-line no-unused-vars
+router.beforeEach((to, from, next) => {
+  const requireAuth = !!(to.meta && to.meta.auth)
+  const token = localStorage.getItem("token")
+
+  // console.log("beforeEach", to)
+  // console.log("token", token)
+
+  if (requireAuth && token) {
+    if (to.name == "login") {
+      next({ name: "home" })
+      return
+    }
+
+    next()
+    return
+  }
+
+  if (token) {
+    if (to.name == "login") {
+      next({ name: "home" })
+      return
+    }
+  } else {
+    if (to.name != "login") {
+      next({ name: "login" })
+      return
+    }
+  }
+  next()
 })
 
 export default router
