@@ -2,7 +2,7 @@ import mutations from "./mutations"
 import actions from "./actions"
 
 const state = () => ({
-  usersList: []
+  usersFields: []
 })
 
 export { state, mutations, actions }

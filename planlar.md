@@ -1,14 +1,20 @@
 - ~~Vue routerda layout tizimini yozamiz~~
 - ~~Defaul, login` va 404 layoutlarini yasaymiz~~
 - ~~Saytimizga stil beramiz~~, ~~proyektga prettier o'rnatamiz~~
-- Routelarni nazorat qiladigan guard yozamiz
+- ~~Routelarni nazorat qiladigan guard yozamiz~~
 
-2 Aprel Vuex boshlimiz
+
 - Vuex boyicha darslar
-  - state
-  - mutations
-  - actions
+  - ~~state~~
+  - ~~mutations~~
+  - ~~actions~~
   - getters
   - modules
   - best practice
-  - modullani avto import (bonus)
+  - ~~modullani avto import (bonus)~~
+  - Vuex modulli metodlari import usullari
+    - ~~mapState~~
+    - ~~mapMutations~~,
+    - mapGatters
+    - ~~mapActions~~
+
